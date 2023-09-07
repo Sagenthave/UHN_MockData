@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+  }
+
+.navbar {
+    background-color: black;
+    margin-bottom: 0%;
+}
+
+#img {
+    width: 100%;
+    height: 400px; object-fit: cover;
+    margin: 0%;
+}
+
+main {
+    display: flex;
+  }
+
+aside {
+    width: 35%;
+    padding: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+  }
+  
+#graph {
+    width: 900px;
+    height: 100%;
+    margin: 0%;
+}
+
+#germ {
+    max-width: 100%;
+    height: auto;
+    padding-right: 45px;
+    padding-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#part {
+    text-decoration: underline;
+}
+
+.diseases {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#date {
+    font-style: italic;
+}
+
+#dept {
+    font-weight: 200;
+}
+
+#measles {
+    width: 30%;
+    padding: 10px;
+    margin: 15px;
+    background-color: lightgray;
+}
+
+#mumps {
+    color: white;
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb(108,160,220);
+}
+
+#igas {
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+    background-color: lightgray;
+}
+
+#varicella {
+    color: white;
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb(108,160,220);
+}
+
+#scarbies {
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+    background-color: lightgray;
+}
+
+#mpox {
+    color: white;
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb(108,160,220);
+}
+
+#diphtheria {
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+    background-color: lightgray;
+}
+
+#tb {
+    color: white;
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb(108,160,220);
+}
+
+#meningitidis {
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+    background-color: lightgray;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+  }
+
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    aside {
+      order: 2;
+      width: fit-content;
+    }
+    #graph {
+        order: 3;
+        width: 600px;
+        margin-top: 15px;
+    }
+    .diseases {
+        order: 4;
+        width: 300%;
+        /* height: auto; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
